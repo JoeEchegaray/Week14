@@ -35,7 +35,7 @@ export default function MovieList(props) {
             Reviews: [{
                 Username: "kosmasp",
                 Review: "A lot has been said and written about Interstellar. You can obviously take apart any movie that is out there. You'll either love this one or you won't. I kind of would have loved to have watched this on an IMAX screen, the sheer scope of the whole thing. It's just amazing, what Nolan has put on screen here. It's not only the visual experience (there is no 3D here by the way), it's the story/ride you take with it. It might be clear to some earlier than to others, where it's heading (no pun intended), but it doesn't change the fact that it's beautiful ... and terrifying at the same time. Going out and saying this will be considered a classic, might not be too far stretched, but you still can never predict those things. The deserved love the movie gets on IMDb and other places would be an indicator that this will ring true though.The acting is really good, but I can understand if some people have issues with the ending.But the movie had to end in one way or another. 'It's' the best possible way this could go, even if it's not in our grasps just yet ...",
-                Rating: 5,
+                Rating: 4,
             }],
         }, {
             Title: "Hidden Figures",
