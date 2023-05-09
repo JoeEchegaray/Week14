@@ -24,7 +24,7 @@ export default function MovieList(props) {
             Reviews: [{
                 Username: "TheLittleSongbird",
                 Review: "This was much better than I expected, and it is far from the worst film ever made. My dad loved the book, and he thinks the film did it justice, and at 17 I liked it. Though with all the different views on Christianity and the complicated plot, it is confusing and convoluted. The dialogue is a little clunky, the violence like the whipping quite disturbing, and the direction perhaps too leisurely. But this is compensated by the splendid locations, especially Paris itself, and the music by Hans Zimmer was very nice, if not his best work. The acting was pretty decent, though all have given better performances, and this includes Tom Hanks and Audrey Tautou in the leads. Jean Reno and Paul Bettany are pretty solid, but it is Ian McKellan, who is a great actor and rarely disappoints in anything he's in, who gives the best performance of the film. All in all, a good film, though it could have been better. It was cleverly constructed though confusing, and it is nowhere near as bad as people make it out to be.",
-                Rating: 4,
+                Rating: 5,
             }],
         }, {
             Title: "Interstellar",
