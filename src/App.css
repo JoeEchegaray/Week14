@@ -1,5 +1,11 @@
+.html {
+  background-color: black;
+}
+
 .App {
   text-align: center;
+  background-color: black;
+  height: 150%;
 }
 
 .App-logo {
@@ -14,8 +20,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +40,15 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.navbar {
+  background-color: rgb(115, 12, 12);
+  font-weight: bolder;
+  font-size: xx-large;
+  color: white;
+}
+
+.navbar-brand{
+  color: white;
 }

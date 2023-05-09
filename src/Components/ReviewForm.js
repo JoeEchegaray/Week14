@@ -6,11 +6,7 @@ import Row from 'react-bootstrap/Row';
 import { Rating } from "@mui/material";
 
 export default function ReviewForm(props) {
-    const [formValues, setFormValues] = useState({ userName: "", reviewContent: "" })
-    const handleChange = (event) => setFormValues({
-        ...formValues,
-        [event.target.name]: event.target.value
-    })
+
     return (
 
         <Form>
@@ -35,8 +31,8 @@ export default function ReviewForm(props) {
             <Rating />
 
             <Form.Group as={Row} className="mb-3">
-                <Col sm={{ span: 10, offset: 2 }}>
-                    <Button onClick={handleSubmit}>Submit</Button>
+                <Col sm={{ span: 10, offset: 1 }}>
+                    <Button className="mt-2 btn-success">Submit</Button>
                 </Col>
             </Form.Group>
         </Form>

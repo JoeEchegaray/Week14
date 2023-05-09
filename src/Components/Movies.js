@@ -10,24 +10,30 @@ export default function Movie(props) {
         console.log(props.movies),
         <>
             {props.movies.map(movie => (
-                <Row xs={1} md={2} className="g-4">
-                    {Array.from({ length: 1 }).map((_, idx) => (
-                        <Col>
-                            <Card style={{ width: "25rem" }}>
-                                <Card.Img variant="top" src={movie.Photo} />
-                                <Card.Header>
-                                    <Card.Title>{movie.Title}</Card.Title>
-                                </Card.Header>
-                                <Card.Body>
-                                    <Card.Text>
-                                        {movie.About}
-                                    </Card.Text>
-                                    <ReviewForm />
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                    ))}
-                </Row>
+                <div className="container">
+                    <div className="row my-3 mx-auto">
+                        <div className="col-lg">
+                            <div className="card mx-auto mb-5" style={{ width: "60rem" }}>
+                                <img className="card-img-top mt-2 mx-auto" src={movie.Photo} style={{ width: "auto", height: "25rem" }} />
+                                <div className="card-header mt-1">
+                                    <h2 className="card-title mx-auto mt-3">{movie.Title}</h2>
+                                    <h4 className="card-subtitle mx-auto">{movie.Year}</h4>
+                                </div>
+                                <div className="card-body mx-auto">
+                                    <p className="card-text">{movie.About}</p>
+                                    <h3>Reviews</h3>
+                                    <p className="card-text">{movie.Reviews.Username}</p>
+                                    <p className="card-text">{movie.Reviews.Review}</p>
+                                    <p className="card-text">{movie.Reviews.Rating}</p>
+                                    <div className="card-footer">
+                                        <h3>Leave your Review!</h3>
+                                        <ReviewForm />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div >
             ))
             }
         </>

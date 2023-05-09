@@ -1,16 +1,15 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
+import '../App.css'
 
-function NavBar() {
+function Nav() {
     return (
-        <Container>
-            <Navbar expand="lg" variant="dark" bg="dark">
-                <Container>
-                    <Navbar.Brand href="#">Joe's Movie Review App</Navbar.Brand>
-                </Container>
-            </Navbar>
-        </Container>
+        <Navbar className='navbar bg-body-tertiary'>
+            <Container>
+                <Navbar.Brand className='' href="#">Joe's Movie Review App</Navbar.Brand>
+            </Container>
+        </Navbar>
     );
 }
 
-export default NavBar;
+export default Nav;
