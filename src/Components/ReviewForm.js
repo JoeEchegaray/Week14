@@ -1,41 +1,35 @@
 import React, { useState } from "react";
-import Button from 'react-bootstrap/Button';
-import Col from 'react-bootstrap/Col';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
 import { Rating } from "@mui/material";
 
+
 export default function ReviewForm(props) {
-
+    let nextID = 7;
+    const [nameValue, setNameValue] = useState("");
+    const [reviewValue, setReviewValue] = useState("");
+    const [ratingValue, setRatingValue] = useState("")
+    console.log(props)
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        props.onSubmit({ Name: nameValue, Review: reviewValue, Rating: ratingValue, Id: nextID++, movieID: props.movieID });
+    }
     return (
-
-        <Form>
-            <Form.Group as={Row} className="mb-3" controlId="userName">
-                <Form.Label column sm={2}>
-                    Name
-                </Form.Label>
-                <Col sm={10}>
-                    <Form.Control type="text" placeholder="Name" />
-                </Col>
-            </Form.Group>
-
-            <Form.Group as={Row} className="mb-3" controlId="reviewContent">
-                <Form.Label column sm={2}>
-                    Your Review
-                </Form.Label>
-                <Col sm={10}>
-                    <Form.Control type="text" placeholder="Your Review" />
-                </Col>
-            </Form.Group>
-
-            <Rating />
-
-            <Form.Group as={Row} className="mb-3">
-                <Col sm={{ span: 10, offset: 1 }}>
-                    <Button className="mt-2 btn-success">Submit</Button>
-                </Col>
-            </Form.Group>
-        </Form>
+        <>
+            <form>
+                <div className="mb-3">
+                    <label for="Name" class="form-label">User Name:</label>
+                    <input type="text" class="form-control" id="Name" value={nameValue} placeholder="Username" onChange={(event) => setNameValue(event.target.value)} />
+                </div>
+                <div className="mb-3">
+                    <label for="Review" class="form-label">Your Review</label>
+                    <textarea type="text" class="form-control" id="Review" value={reviewValue} rows="3" placeholder="Review" onChange={(event) => setReviewValue(event.target.value)} />
+                </div>
+                <Rating
+                    name="Rating"
+                    onChange={(event) => setRatingValue(event.target.value)}
+                /><br />
+                <button className="btn btn-success my-2 mx-auto" onClick={handleSubmit}>Submit</button>
+            </form>
+        </>
     );
 }
 

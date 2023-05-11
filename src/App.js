@@ -4,6 +4,7 @@ import MovieList from './Components/MovieList';
 import './App.css'
 
 
+
 function App() {
   return (
     <div className="App">
