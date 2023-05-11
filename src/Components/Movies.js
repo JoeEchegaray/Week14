@@ -12,6 +12,30 @@ export default function Movie(props) {
         Rating: "4",
         Id: 1,
         movieID: 4,
+    }, {
+        Name: "nadrojh",
+        Review: "Hidden Figures is a really good movie. I never read Margot Lee Shetterly's book, but I might now. This is a wonderful movie about civil rights, space travel, and new technology. It pulls in many different characters and personalities. Theodore Melt did a wonderful job directing. The story focus on the technical aspects. However the movie is never slow, it keeps moving and keeps you interested. The casting was good. Octavia Spencer, Taraji Henson, Janelle Mona, and Kevin Costner did an incredible job. There was also wonderful performances by Jim Parsons and Kirsten Dunst. Hidden Figures is a fun and exciting movie about advancement in ideas and technology. Its is also a very uplifting movie about bravery and taking chances. It is really good. I enjoyed it.",
+        Rating: 4,
+        Id: 2,
+        movieID: 3,
+    }, {
+        Name: "kosmasp",
+        Review: "A lot has been said and written about Interstellar. You can obviously take apart any movie that is out there. You'll either love this one or you won't. I kind of would have loved to have watched this on an IMAX screen, the sheer scope of the whole thing. It's just amazing, what Nolan has put on screen here. It's not only the visual experience (there is no 3D here by the way), it's the story/ride you take with it. It might be clear to some earlier than to others, where it's heading (no pun intended), but it doesn't change the fact that it's beautiful ... and terrifying at the same time. Going out and saying this will be considered a classic, might not be too far stretched, but you still can never predict those things. The deserved love the movie gets on IMDb and other places would be an indicator that this will ring true though.The acting is really good, but I can understand if some people have issues with the ending.But the movie had to end in one way or another. 'It's' the best possible way this could go, even if it's not in our grasps just yet ...",
+        Rating: 4,
+        Id: 3,
+        movieID: 2,
+    }, {
+        Name: "TheLittleSongbird",
+        Review: "This was much better than I expected, and it is far from the worst film ever made. My dad loved the book, and he thinks the film did it justice, and at 17 I liked it. Though with all the different views on Christianity and the complicated plot, it is confusing and convoluted. The dialogue is a little clunky, the violence like the whipping quite disturbing, and the direction perhaps too leisurely. But this is compensated by the splendid locations, especially Paris itself, and the music by Hans Zimmer was very nice, if not his best work. The acting was pretty decent, though all have given better performances, and this includes Tom Hanks and Audrey Tautou in the leads. Jean Reno and Paul Bettany are pretty solid, but it is Ian McKellan, who is a great actor and rarely disappoints in anything he's in, who gives the best performance of the film. All in all, a good film, though it could have been better. It was cleverly constructed though confusing, and it is nowhere near as bad as people make it out to be.",
+        Rating: 5,
+        Id: 4,
+        movieID: 1
+    }, {
+        Name: "MrHeraclius",
+        Review: "Avatar tells a familiar story but its a story that works so well inside of this movie. The visuals and 3d are still one of the best to date and i totally get why it made so much money.",
+        Rating: 3,
+        Id: 5,
+        movieID: 0
     }])
     console.log(props.movies.Reviews)
     function addReview(review) {
